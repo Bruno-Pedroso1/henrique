@@ -299,7 +299,7 @@ const UserController = {
 
       let token = jwt.sign(
         { userId: user.id, email: user.email, role: user.role },
-        process.env.TOKEN_KEY || "IXCAGENDA",
+        process.env.TOKEN_KEY || "toksen",
         { expiresIn: "5h" }
       );
       user.token = token;
@@ -462,7 +462,7 @@ const UserController = {
         token = token.split(" ")[1];
         let funcao: any = jwt.verify(
           token,
-          process.env.TOKEN_KEY || "IXCAGENDA"
+          process.env.TOKEN_KEY || "toksen"
         );
         console.log(error);
 

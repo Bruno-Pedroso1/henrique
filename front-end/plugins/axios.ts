@@ -7,7 +7,7 @@ export default function (
   const api = $axios.create();
 
   api.onRequest(() => {
-    const token = localStorage.getItem("IXCAGENDA") || "";
+    const token = localStorage.getItem("toksen") || "";
     api.setHeader("Authorization", `Bearer ${token}`);
   });
 

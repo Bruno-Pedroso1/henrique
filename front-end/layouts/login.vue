@@ -26,7 +26,7 @@ export default {
 
   methods: {
     async loginValidator() {
-      let token = localStorage.getItem("IXCAGENDA");
+      let token = localStorage.getItem("toksen");
       const { data } = await this.$api.get("/api/users/by-token");
       if (data) {
         this.user = {

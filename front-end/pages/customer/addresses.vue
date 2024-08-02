@@ -439,14 +439,10 @@ export default {
         const response = await this.$api.get(
           `https://viacep.com.br/ws/${this.zipCode}/json/`
         );
-
-        // Verificar e criar o estado
         const state = await this.findOrCreateState(response.uf);
 
-        // Verificar e criar a cidade
         const city = await this.findOrCreateCity(response.localidade, state);
 
-        // Construir o objeto de requisição do endereço
         const addressRequest = {
           zipCode: this.zipCode,
           idCity: city.id,

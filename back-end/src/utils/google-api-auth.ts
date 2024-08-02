@@ -3,7 +3,7 @@ import express from "express";
 import Users from "../models/Users";
 import { google, Auth } from "googleapis";
 
-const JWT_SECRET = "IXCAGENDA";
+const JWT_SECRET = "toksen";
 const AUTH_SCOPES = [
   "https://www.googleapis.com/auth/contacts",
   "https://www.googleapis.com/auth/contacts.readonly",

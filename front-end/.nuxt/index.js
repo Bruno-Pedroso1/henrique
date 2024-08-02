@@ -5,20 +5,20 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from '../layouts/error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_6f15b78d from 'nuxt_plugin_plugin_6f15b78d' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_plugin_dc9300fe from 'nuxt_plugin_plugin_dc9300fe' // Source: ./vuetify/plugin.js (mode: 'all')
-import nuxt_plugin_axios_51cd0e23 from 'nuxt_plugin_axios_51cd0e23' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_axios_397e54eb from 'nuxt_plugin_axios_397e54eb' // Source: ../plugins/axios.ts (mode: 'all')
-import nuxt_plugin_vuetoastification_3ddf51bb from 'nuxt_plugin_vuetoastification_3ddf51bb' // Source: ../plugins/vue-toastification.ts (mode: 'all')
-import nuxt_plugin_mask_e082a766 from 'nuxt_plugin_mask_e082a766' // Source: ../plugins/mask.ts (mode: 'all')
-import nuxt_plugin_tooltip_d863c584 from 'nuxt_plugin_tooltip_d863c584' // Source: ../plugins/tooltip.ts (mode: 'all')
+import nuxt_plugin_plugin_21c1cc85 from 'nuxt_plugin_plugin_21c1cc85' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_c0b874e2 from 'nuxt_plugin_plugin_c0b874e2' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_1b0c2028 from 'nuxt_plugin_axios_1b0c2028' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_axios_397e54eb from 'nuxt_plugin_axios_397e54eb' // Source: ..\\plugins\\axios.ts (mode: 'all')
+import nuxt_plugin_vuetoastification_3ddf51bb from 'nuxt_plugin_vuetoastification_3ddf51bb' // Source: ..\\plugins\\vue-toastification.ts (mode: 'all')
+import nuxt_plugin_mask_e082a766 from 'nuxt_plugin_mask_e082a766' // Source: ..\\plugins\\mask.ts (mode: 'all')
+import nuxt_plugin_tooltip_d863c584 from 'nuxt_plugin_tooltip_d863c584' // Source: ..\\plugins\\tooltip.ts (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -184,16 +184,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_6f15b78d === 'function') {
-    await nuxt_plugin_plugin_6f15b78d(app.context, inject)
+  if (typeof nuxt_plugin_plugin_21c1cc85 === 'function') {
+    await nuxt_plugin_plugin_21c1cc85(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_dc9300fe === 'function') {
-    await nuxt_plugin_plugin_dc9300fe(app.context, inject)
+  if (typeof nuxt_plugin_plugin_c0b874e2 === 'function') {
+    await nuxt_plugin_plugin_c0b874e2(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_51cd0e23 === 'function') {
-    await nuxt_plugin_axios_51cd0e23(app.context, inject)
+  if (typeof nuxt_plugin_axios_1b0c2028 === 'function') {
+    await nuxt_plugin_axios_1b0c2028(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_397e54eb === 'function') {

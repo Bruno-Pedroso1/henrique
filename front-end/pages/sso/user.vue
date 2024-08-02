@@ -496,7 +496,7 @@ export default {
     },
     async validateLogin() {
       try {
-        let token = localStorage.getItem("IXCAGENDA");
+        let token = localStorage.getItem("toksen");
         console.log(this.user);
         console.log(token);
         if (!token) {

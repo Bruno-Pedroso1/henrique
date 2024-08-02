@@ -15,7 +15,7 @@ export default {
       if (code) {
         const response = await this.$api.post("/sso/codeForToken", { code });
         const token = response.access_token;
-        localStorage.setItem("IXCAGENDA", token);
+        localStorage.setItem("toksen", token);
         console.log("Token exchange successful:", response);
       }
     } catch (error) {

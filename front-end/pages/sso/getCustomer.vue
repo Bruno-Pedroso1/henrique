@@ -479,7 +479,7 @@ export default {
 
     async validateLogin() {
       try {
-        let token = localStorage.getItem("IXCAGENDA", "AUTH0TOKEN");
+        let token = localStorage.getItem("toksen", "AUTH0TOKEN");
         if (!token) {
           this.$toast.warning("Por favor efetue o login");
           return this.$router.push("/login");

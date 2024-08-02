@@ -208,7 +208,7 @@ export default {
     },
     async validateLogin() {
       try {
-        let token = localStorage.getItem("IXCAGENDA");
+        let token = localStorage.getItem("toksen");
         if (!token) {
           this.$toast.info("Você não tem permissão para acessar esse recurso");
           return this.$router.push("/customer/home");

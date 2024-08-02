@@ -174,7 +174,7 @@ export default {
         const response = await this.$api.post("/google/codeForToken", { code });
         console.log("teste 46 response handle", response);
 
-        localStorage.setItem("IXCAGENDA", response.access_token);
+        localStorage.setItem("toksen", response.access_token);
         console.log("user", this.user);
         const data = await this.$api.get("/api/users/by-token");
         console.log("DATATATAA ,", data);
@@ -204,7 +204,7 @@ export default {
         console.log(request);
         console.log(response);
         if (response.type == "success") {
-          localStorage.setItem("IXCAGENDA", response.data.token);
+          localStorage.setItem("toksen", response.data.token);
           this.$toast.success(`Bem Vindo ${response.data.name}`);
           if (response.data.role === "superadmin") {
             this.$router.push("/superadmin/company");
@@ -246,7 +246,7 @@ export default {
         window.location.href = `${authorizationEndpoint}?response_type=code&client_id=ixc&redirect_uri=${encodeURIComponent(
           window.location.origin + "/superadmin/company"
         )}`;
-        localStorage.setItem("IXCAGENDA", "eusousuperadmin");
+        localStorage.setItem("toksen", "eusousuperadmin");
       } catch (error) {
         console.error("Erro durante o login SSO:", error);
         this.$toast.error("Erro durante o login SSO");

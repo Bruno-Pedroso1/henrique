@@ -874,7 +874,7 @@ export default {
             code,
           });
           const token = response.access_token;
-          localStorage.setItem("IXCAGENDA", token);
+          localStorage.setItem("toksen", token);
           console.log(token);
         }
       } catch (error) {
@@ -956,7 +956,7 @@ export default {
     },
     async validateLogin() {
       try {
-        let token = localStorage.getItem("IXCAGENDA");
+        let token = localStorage.getItem("toksen");
         if (!token) {
           this.$toast.warning("Por favor efetue o login");
           return this.$router.push("/");

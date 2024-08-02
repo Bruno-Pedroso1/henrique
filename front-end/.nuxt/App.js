@@ -2,20 +2,20 @@ import Vue from 'vue'
 import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } from 'ufo'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from '../layouts/error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../node_modules/@mdi/font/css/materialdesignicons.min.css'
+import '..\\node_modules\\@mdi\\font\\css\\materialdesignicons.min.css'
 
-import '../node_modules/vuetify/dist/vuetify.css'
+import '..\\node_modules\\vuetify\\dist\\vuetify.css'
 
-import _77068119 from '../layouts/admin.vue'
-import _7bcfb5d4 from '../layouts/customer.vue'
-import _6f6c098b from '../layouts/default.vue'
-import _77fb69db from '../layouts/inicio.vue'
-import _77a66d33 from '../layouts/login.vue'
-import _7e1c65d8 from '../layouts/master.vue'
+import _77068119 from '..\\layouts\\admin.vue'
+import _7bcfb5d4 from '..\\layouts\\customer.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
+import _77fb69db from '..\\layouts\\inicio.vue'
+import _77a66d33 from '..\\layouts\\login.vue'
+import _7e1c65d8 from '..\\layouts\\master.vue'
 
 const layouts = { "_admin": sanitizeComponent(_77068119),"_customer": sanitizeComponent(_7bcfb5d4),"_default": sanitizeComponent(_6f6c098b),"_inicio": sanitizeComponent(_77fb69db),"_login": sanitizeComponent(_77a66d33),"_master": sanitizeComponent(_7e1c65d8) }
 

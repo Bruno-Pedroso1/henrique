@@ -17,7 +17,7 @@ export default {
   methods: {
     async validateLogin() {
       try {
-        let token = localStorage.getItem("IXCAGENDA");
+        let token = localStorage.getItem("toksen");
         if (!token) {
           this.$toast.warning("Por favor efetue o login");
           return this.$router.push("/login");

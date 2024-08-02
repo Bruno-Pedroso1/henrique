@@ -237,7 +237,7 @@ export default {
   },
   methods: {
     getUsuario() {
-      const token = localStorage.getItem("IXCAGENDA");
+      const token = localStorage.getItem("toksen");
       console.log(token);
       if (token) {
         this.logado = true;
@@ -245,7 +245,7 @@ export default {
     },
     sairConta() {
       this.logado = false;
-      localStorage.removeItem("IXCAGENDA");
+      localStorage.removeItem("toksen");
       this.$router.push("/");
     },
   },
